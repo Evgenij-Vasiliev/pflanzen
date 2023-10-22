@@ -7,11 +7,11 @@ body {
 }
 
 img {
-	width: 15px;
-	height: 15px;
+	width: 1.5rem;
+	height: 1.5rem;
 }
 
-.aside-left {	
+.aside-left {		
 	background-color: #fff;
 	height: 100%;
 	width: 8vw;
@@ -19,7 +19,7 @@ img {
 	z-index: 1;
 	top: 0;
 	left: 0;
-	padding-top: 20px;	
+	padding: 1rem 0;	
 }
  .site	{	
 	height: 100vh;
@@ -41,7 +41,7 @@ img {
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	gap: 3rem;
+	gap: 1rem;
 }
 
 .nav-link {
@@ -56,7 +56,7 @@ img {
 }
 
 .nav-img {
-	width: 20px;
+	width: 2rem;
 	position: absolute;
 	left: 50%;
 	top: 50%;
@@ -68,7 +68,7 @@ img {
 }
 
 .header {	
-	padding: 0 30px;
+	padding: 0 3rem;
 	height: 12vh;
 	display: flex;
 	justify-content: space-between;
@@ -76,8 +76,8 @@ img {
 
 	.avatar-img,
 	.notification-img {
-		width: 22px;
-		height: 22px;
+		width: 2.2rem;
+		height: 2.2rem;
 	}
 }
 .main {	
@@ -99,8 +99,8 @@ img {
 }
 
 .aside-right img {
-	margin-left: 30px;
-	margin-top: 20px;
+	margin-left: 2rem;
+	margin-top: 1rem;
 }
 
 .reminders {
@@ -113,7 +113,7 @@ img {
 
 .days  {
 	align-items: center;
-	border-right: 2px solid #fff;
+	border-right: 0.2rem solid #fff;
 	margin: 1rem;
 	padding-top: .5rem;
 	padding-right: 1rem;
@@ -128,8 +128,8 @@ img {
 }
 
 .plant {
-	width: 25px;
-	height: 25px;
+	width: 2.5rem;
+	height: 2.5rem;
 }
 .basil {
 	background-image: url('../image/basil2.jpg');
@@ -143,7 +143,7 @@ img {
 	position: relative;
 }
 .basil p {
-	font-size: 12px;
+	font-size: 1.2rem;
 }
 .summary-img {
 	opacity: .3;
@@ -153,29 +153,29 @@ img {
 } 
 
 .btn-summary {	
-	font-size: 14px;
+	font-size: .8rem;
 	font-weight: 800;
-	padding: .6rem;
+	padding: .3rem;
 	border: none;
 	border-radius: 1rem;
 	opacity: 0.8;
 	color: #AAC070;
 	cursor: pointer;	
 }
-.position-summary {
+.position-summary {	
 	position: absolute;
 	bottom: 1rem;
 	right: 1rem;
 }
-.position-tags {
+/* .position-tags {
 	position: absolute;
-	top: 80%;
-	left: 85%;
-}
+	top: 85%;
+	left: 80%;
+} */
 
 i {
   border: solid #AAC070;
-  border-width: 0 3px 3px 0;
+  border-width: 0 0.3rem 0.3rem 0;
   display: inline-block;
   padding: .3rem;
 }
@@ -200,11 +200,11 @@ i {
 	justify-content: space-between;
 	width: 90%;
 	margin: 0 auto;
-	font-size: 12px;
+	font-size: 1.2rem;
 	padding-left: 1rem;
 }
 .watering select {
-	font-size: 10px;
+	font-size: 1rem;
 	opacity: .3;
 	border-style: none;
 	margin-bottom: 1rem;
@@ -221,7 +221,7 @@ i {
 	position: relative;		
 }
 .watering-schedule p {
-	font-size: 10px;
+	font-size: .7rem;
 	opacity: .5;
 }
 .drop {
@@ -240,26 +240,28 @@ i {
 	gap: .8rem;
 }
 .mon, .wed, .fri {
-	width: 10px;
-	height: 10px;
+	width: 1rem;
+	height: 1rem;
 }
-.wrapper-schedule {
+.wrapper-schedule {	
 	width: 90%;
 	margin: 0 auto;
 	border-radius: 1rem;
-	box-shadow: -2px 1px 2px .8px rgba(0,0,0, .05);
-	margin-bottom: 1rem;
+	box-shadow: -0.2rem .1rem .2rem .08rem rgba(0,0,0, .05);
+	margin-bottom: 1rem;	
 }
-.temperature h4 {
-	padding-left: 2rem;
+
+.temperature-graph h4 {			
+	padding-left: 2rem;		
 }
-.graph {
-	width: 25rem;
-	height: 9rem;
+.graph {		
+	margin: 0;
+	width: 18rem;
+	height: 10rem;		
 }
 
 .tags {			
-	height: 40%;	
+	height: 60%;	
 	border-radius: 1rem;
 	margin: 0 2rem 1rem 2rem;
 	background-image: url('../image/nature-plant5.jpg');
@@ -267,15 +269,16 @@ i {
 }
 .tags p {
 	color: #fff;
-	font-size: 2rem;
-	padding: 2rem 0 0 2rem;
+	font-size: 1rem;
+	padding: 1rem 0 0 1rem;
 	opacity: .8;
-	/* position: relative; */
+	position: relative;
 }
 .tag {	
 	display: flex;	
 	align-items: center;
-	height: 1ram;
+	font-size: .8rem;
+	/* height: 1rem; */
 }
 .tag-temperature {
 	position: absolute;
@@ -301,17 +304,17 @@ i {
 	flex-direction: column;
 }
 .border-right {
-	border-right: 2px solid #fff;	
+	border-right: .2rem solid #fff;	
 	height: 2rem;
 }
 .border-top {
-	border-top: 2px solid #fff;
+	border-top: .2rem solid #fff;
 	width: 2rem;
 }
 .element-1 {	
 	border-radius: 1rem;
 	display: inline-block;
-	padding: .6rem;
+	padding: .4rem;
 	background-color: #fff;
 	opacity: .7;	
 }
@@ -336,30 +339,30 @@ i {
 	opacity: .7;
 }
 .element-3 img {
-	width: 18px;
-	height: 18px;
+	width: .8rem;
+	height: .8rem;
 }
-.recommendation {	
+.recommendation {		
 	background-color: #fff;
-	height: 40%;		
+	height: 50vh;		
 	border-radius: 1rem;	
 	margin: 0 2rem 1rem 2rem;	
-	padding: 0 2.5rem;
+	padding: 0 1rem;
 }
-.wrapper-cards {	
-	width: 100%;
+.wrapper-cards {		
+	width: 100wv;
 	display: flex;
 	justify-content: space-between;
-	gap: 2rem;
+	gap: 1rem;
 }
-.card {	
-	border-radius: 2rem;	
-	width: 300px;
-	height: 14rem;
+.card {		
+	border-radius: 1rem;	
+	width: 30rem;
+	height: 10rem;
 }
 .card p {	
 	padding: 1rem 0 0 1rem;
-	font-size: 20px;	
+	font-size: 1rem;	
 }
 .card span {
 	padding: 1rem 0 0 1rem;
@@ -380,12 +383,12 @@ i {
 	gap: .4rem;
 }
 .recommendation-title h4 {
-	font-size: 24px;
+	font-size: 1rem;
 	font-weight: 600;
 }
 .recommendation-title img {
-	width: 20px;
-	height: 20px;
+	width: 2rem;
+	height: 2rem;
 }
 .recommendation-header {
 	display: flex;
