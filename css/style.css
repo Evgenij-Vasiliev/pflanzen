@@ -169,8 +169,8 @@ img {
 }
 .position-tags {
 	position: absolute;
-	top: 25rem;
-	left: 42rem;
+	top: 80%;
+	left: 85%;
 }
 
 i {
@@ -258,43 +258,44 @@ i {
 	height: 9rem;
 }
 
-.tags {		
+.tags {			
 	height: 40%;	
 	border-radius: 1rem;
 	margin: 0 2rem 1rem 2rem;
 	background-image: url('../image/nature-plant5.jpg');
+	position: relative;
 }
 .tags p {
 	color: #fff;
 	font-size: 2rem;
 	padding: 2rem 0 0 2rem;
 	opacity: .8;
-	position: relative;
+	/* position: relative; */
 }
-.tag {
+.tag {	
 	display: flex;	
 	align-items: center;
 	height: 1ram;
 }
 .tag-temperature {
 	position: absolute;
-	top: 21rem;
-	left: 13rem;	
+	top: 50%;
+	left: 30%;	
 }
 .tag-air {
 	position: absolute;
-	top: 24rem;
-	left: 24rem;
+	top: 68%;
+	left: 45%;
 }
 .tag-light {
 	position: absolute;
-	top: 15.5rem;
-	left: 32rem;
+	top: 30%;
+	left: 60%;
 }
 .tag-water {
 	position: absolute;
-	top: 15rem;
-	left: 45rem;
+	top: 30%;
+	left: 88%;
 }
 .flex-column {
 	flex-direction: column;
