@@ -4,11 +4,204 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Document</title>
+	<link rel="stylesheet" href="./css/normalize.css">
+	<link rel="stylesheet" href="./css/reset.css">
+	<link rel="stylesheet" href="./css/style.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;700&display=swap" rel="stylesheet">
+	<title>Pflanzen</title>
 </head>
 
 <body>
-	<h1>Hello World!</h1>
+	<div class="wrapper">
+		<aside class='aside-left'>
+			<a href='#' class='logo-link'><img src="./icons/logo.svg" alt="logo Pflanzen" class='logo-img'></a>
+			<nav class="navbar">
+				<a href='#' class='nav-link active'><img src="./icons/leaf2.svg" alt="leaf" class='nav-img'></a>
+				<a href='#' class='nav-link'><img src="./icons/growth2.svg" alt="growth" class='nav-img'></a>
+				<a href='#' class='nav-link'><img src="./icons/document.svg" alt="document" class='nav-img'></a>
+				<a href='#' class='nav-link'><img src="./icons/basket.svg" alt="basket" class='nav-img'></a>
+			</nav>
+			<a href='#' class='exit-link'><img src="./icons/exit.svg" width='22' alt="exit" class='exit-img'></a>
+		</aside>
+
+		<div class="site">
+			<header class='header'>
+				<p>Select your plants for Hydroponics!</p>
+				<div class="personal-area">
+					<a href='#' class='avatar-link'><img src="./icons/avatar5.svg" alt="user avatar" class='avatar-img'></a>
+					<a href='#' class='notification-link'><img src="./icons/notification.svg" alt="bell"
+							class='notification-img'></a>
+				</div>
+			</header>
+
+			<main class="main">
+				<div class='main-section'>
+					<!-- Первая секция -->
+					<section class='reminders'>
+						<div class='days'>
+							<p>14</p>
+							<p>Days</p>
+						</div>
+						<div class='examination'>
+							<div>
+								<p>Check your basil plants!</p>
+								<p style='opacity: 0.5;'>Today yor to water, 2 weeks for harvest</p>
+							</div>
+							<div class='nav-link frame'>
+								<a href='#' class=''><img class='nav-img plant' src="./icons/plant.svg" alt="leaf"></a>
+							</div>
+						</div>
+					</section>
+					<!-- Вторая секция -->
+					<section class='tags'>
+						<p>Elevate Your Gardening</p>
+						<p>Game With Hydroponics</p>
+						<div class="tag-temperature tag flex-column">
+							<div class="element-1 orange">Temperature</div>
+							<div class="element-2 border-right"></div>
+							<div class="element-3">
+								<img src="./icons/tags/temperature.svg" alt="temperature">
+							</div>
+						</div>
+						<div class="tag-air tag">
+							<div class="element-1 blue">Air Circulation</div>
+							<div class="element-2 border-top"></div>
+							<div class="element-3">
+								<img src="./icons/tags/air.svg" alt="air">
+							</div>
+						</div>
+						<div class="tag-light tag">
+							<div class="element-3">
+								<img src="./icons/tags/light.svg" alt="light">
+							</div>
+							<div class="element-2 border-top"></div>
+							<div class="element-1 orange">Light</div>
+						</div>
+						<div class="tag-water tag flex-column">
+							<div class="element-3">
+								<img src="./icons/tags/water.svg" alt="water">
+							</div>
+							<div class="element-2 border-right"></div>
+							<div class="element-1 blue">Water</div>
+						</div>
+						<button class='btn-summary position-tags button-color'>See Details
+							<i class="arrow right"></i>
+						</button>
+					</section>
+					<!-- Третья секция -->
+					<section class='recommendation'>
+						<div class="schedule recommendation-header">
+							<div class="recommendation-title">
+								<img src="./icons/fire.svg" alt="fire">
+								<h4>Recommendation</h4>
+							</div>
+							<button class='btn-schedule'>see more</button>
+						</div>
+						<div class="wrapper-cards">
+							<div class="lettuce card">
+								<p>Lettuce</p>
+								<span>(Lactuca Sativa)</span>
+							</div>
+							<div class="coriander card">
+								<p>Coriander</p>
+								<span>(Cilantro)</span>
+							</div>
+							<div class="spinach card">
+								<p>Spinach</p>
+								<span>(Amarantus)</span>
+							</div>
+						</div>
+					</section>
+				</div>
+				<aside class="aside-right">
+					<div class="basil-plants">
+						<div class="basil-plants_image">
+							<img class='summary-img' src="./icons/summary2.svg" alt="summary">
+							<span>Summary</span>
+							<div class="basil">
+								<h2>Basil plants</h2>
+								<p>(Ocimum Basilicum)</p>
+								<button class='btn-summary position-summary'>See Details
+									<i class="arrow right"></i>
+								</button>
+							</div>
+						</div>
+						<!-- Расписание -->
+						<div class="wrapper-schedule">
+							<div class="schedule">
+								<h4>Schedule</h4>
+								<button class='btn-schedule'>see more</button>
+							</div>
+							<!-- Полив -->
+							<div class="watering">
+								<h6>Watering</h6>
+								<label for="Week">State:
+									<select id="Week">
+										<option label="Week" value="Week">Week</option>
+									</select>
+								</label>
+
+							</div>
+
+							<!-- График полива -->
+
+							<div class="wrapper_watering-schedule">
+								<div class="watering-schedule">
+									<p class="sun">Sun</p>
+									<img class='drop' src="./icons/drop.svg" alt="drop">
+									<p class="sun">3</p>
+								</div>
+								<div class="watering-schedule">
+									<p class="sun">Mon</p>
+									<img class='drop mon' src="./icons/drop.svg" alt="drop">
+									<p class="sun">4</p>
+								</div>
+								<div class="watering-schedule">
+									<p class="sun">Tue</p>
+									<img class='drop' src="./icons/drop.svg" alt="drop">
+									<p class="sun">5</p>
+								</div>
+								<div class="watering-schedule active-day">
+									<p class="sun">Wed</p>
+									<img class='drop wed' src="./icons/drop.svg" alt="drop">
+									<p class="sun">6</p>
+								</div>
+								<div class="watering-schedule">
+									<p class="sun">Thu</p>
+									<img class='drop' src="./icons/drop.svg" alt="drop">
+									<p class="sun">7</p>
+								</div>
+								<div class="watering-schedule">
+									<p class="sun">Fri</p>
+									<img class='drop fri' src="./icons/drop.svg" alt="drop">
+									<p class="sun">8</p>
+								</div>
+								<div class="watering-schedule">
+									<p class="sun">Sat</p>
+									<img class='drop' src="./icons/drop.svg" alt="drop">
+									<p class="sun">9</p>
+								</div>
+							</div>
+						</div>
+						<!-- Обслуживание -->
+						<div class="wrapper-maintenance wrapper-schedule">
+							<div class="schedule maintenance">
+								<h4>Maintenance</h4>
+								<button class='btn-schedule'>see more</button>
+							</div>
+							<div class="temperature">
+								<h4>Temperature</h4>
+								<img class="graph" src="./image/graph.png" alt="График температур">
+							</div>
+						</div>
+					</div>
+				</aside>
+			</main>
+			<footer class="footer"></footer>
+		</div>
+	</div>
 </body>
 
 </html>
