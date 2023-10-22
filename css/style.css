@@ -1,0 +1,403 @@
+body {
+	background-color: #f7f7f7;
+	font-family: "Hanken Grotesk", sans-serif;
+}
+* {
+	box-sizing: border-box;
+}
+
+img {
+	width: 15px;
+	height: 15px;
+}
+
+.aside-left {	
+	background-color: #fff;
+	height: 100%;
+	width: 8vw;
+	position: fixed;
+	z-index: 1;
+	top: 0;
+	left: 0;
+	padding-top: 20px;	
+}
+ .site	{	
+	height: 100vh;
+	width: calc(100% - 8vw);
+	position: absolute;
+	top: 0;
+	right: 0;
+ } 
+
+.logo-link,
+.exit-link {
+	display: block;
+	text-align: center;
+}
+
+.navbar {
+	height: 90%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 3rem;
+}
+
+.nav-link {
+	height: 3rem;
+	width: 3rem;
+	border-radius: 50%;
+	position: relative;
+}
+
+.nav-link:hover {
+	background-color: #00cf00;
+}
+
+.nav-img {
+	width: 20px;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.active {
+	background-color: #008000;
+}
+
+.header {	
+	padding: 0 30px;
+	height: 12vh;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+	.avatar-img,
+	.notification-img {
+		width: 22px;
+		height: 22px;
+	}
+}
+.main {	
+	height: calc(100% - 12vh);
+	width: 100%;	
+	display: flex;
+}
+
+.main-section {	
+	height: 100%;
+	width: 60%;	
+}
+
+.aside-right {	
+	background-color: #fff;
+	border-radius: 10%;
+	height: 100%;
+	width: 40%;	
+}
+
+.aside-right img {
+	margin-left: 30px;
+	margin-top: 20px;
+}
+
+.reminders {
+	display: flex;		
+	background-color: #B3CD84;	
+	border-radius: 1rem;
+	color: #fff;	
+	margin: 0 2rem 1rem 2rem;
+}
+
+.days  {
+	align-items: center;
+	border-right: 2px solid #fff;
+	margin: 1rem;
+	padding-top: .5rem;
+	padding-right: 1rem;
+}
+
+.examination {		
+	display: flex;
+	justify-content: space-between;	
+	align-items: center;	
+	width: 100%;	
+	padding: 1rem;
+}
+
+.plant {
+	width: 25px;
+	height: 25px;
+}
+.basil {
+	background-image: url('/image/basil2.jpg');
+	margin: 0 auto;
+	width: 90%;
+	height: 14rem;
+	border-radius: 1rem;
+	padding: 1rem;
+	margin-top: 1rem;
+	color: #fff;
+	position: relative;
+}
+.basil p {
+	font-size: 12px;
+}
+.summary-img {
+	opacity: .3;
+}
+.basil p {
+	opacity: .7;
+} 
+
+.btn-summary {	
+	font-size: 14px;
+	font-weight: 800;
+	padding: .6rem;
+	border: none;
+	border-radius: 1rem;
+	opacity: 0.8;
+	color: #AAC070;
+	cursor: pointer;	
+}
+.position-summary {
+	position: absolute;
+	bottom: 1rem;
+	right: 1rem;
+}
+.position-tags {
+	position: absolute;
+	top: 25rem;
+	left: 42rem;
+}
+
+i {
+  border: solid #AAC070;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: .3rem;
+}
+
+.right {
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+}
+.schedule {
+	padding: 1rem;
+	display: flex;
+	justify-content: space-between;		
+}
+.btn-schedule {
+	border-style: none;
+	background: none;
+	cursor: pointer;
+	opacity: .3;
+}
+.watering {	
+	display: flex;
+	justify-content: space-between;
+	width: 90%;
+	margin: 0 auto;
+	font-size: 12px;
+	padding-left: 1rem;
+}
+.watering select {
+	font-size: 10px;
+	opacity: .3;
+	border-style: none;
+	margin-bottom: 1rem;
+}
+.watering-schedule {	
+	border-radius: .5rem;
+	width: 9%;
+	height: 4rem;	
+	display: flex;
+	flex-direction: column;	
+	align-items: center;
+	gap: 2rem;
+	padding: .3rem;
+	position: relative;		
+}
+.watering-schedule p {
+	font-size: 10px;
+	opacity: .5;
+}
+.drop {
+	position: absolute;
+	right: 50%;
+	bottom: 50%;
+	transform: translate(50%, 50%);
+}
+.active-day {
+	background-color: #E1EDC8;
+}
+
+.wrapper_watering-schedule {		
+	display: flex;
+	justify-content: center;
+	gap: .8rem;
+}
+.mon, .wed, .fri {
+	width: 10px;
+	height: 10px;
+}
+.wrapper-schedule {
+	width: 90%;
+	margin: 0 auto;
+	border-radius: 1rem;
+	box-shadow: -2px 1px 2px .8px rgba(0,0,0, .05);
+	margin-bottom: 1rem;
+}
+.temperature h4 {
+	padding-left: 2rem;
+}
+.graph {
+	width: 25rem;
+	height: 9rem;
+}
+
+.tags {		
+	height: 40%;	
+	border-radius: 1rem;
+	margin: 0 2rem 1rem 2rem;
+	background-image: url('/image/nature-plant5.jpg');
+}
+.tags p {
+	color: #fff;
+	font-size: 2rem;
+	padding: 2rem 0 0 2rem;
+	opacity: .8;
+	position: relative;
+}
+.tag {
+	display: flex;	
+	align-items: center;
+	height: 1ram;
+}
+.tag-temperature {
+	position: absolute;
+	top: 21rem;
+	left: 13rem;	
+}
+.tag-air {
+	position: absolute;
+	top: 24rem;
+	left: 24rem;
+}
+.tag-light {
+	position: absolute;
+	top: 15.5rem;
+	left: 32rem;
+}
+.tag-water {
+	position: absolute;
+	top: 15rem;
+	left: 45rem;
+}
+.flex-column {
+	flex-direction: column;
+}
+.border-right {
+	border-right: 2px solid #fff;	
+	height: 2rem;
+}
+.border-top {
+	border-top: 2px solid #fff;
+	width: 2rem;
+}
+.element-1 {	
+	border-radius: 1rem;
+	display: inline-block;
+	padding: .6rem;
+	background-color: #fff;
+	opacity: .7;	
+}
+.orange {
+	color: orange;
+}
+.blue {
+	color: blue;
+}
+.button-color {
+	background-color: #C1D785;
+	color: #81A531;
+}
+.element-2 {	
+	display: inline-block;	
+	/* padding: .5rem; */
+}
+.element-3 {	
+	border-radius: 50%;
+	display: inline-block;
+	padding: .4rem;
+	background-color: #fff;
+	opacity: .7;
+}
+.element-3 img {
+	width: 18px;
+	height: 18px;
+}
+.recommendation {	
+	background-color: #fff;
+	height: 40%;		
+	border-radius: 1rem;	
+	margin: 0 2rem 1rem 2rem;	
+	padding: 0 2.5rem;
+}
+.wrapper-cards {	
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	gap: 2rem;
+}
+.card {	
+	border-radius: 2rem;	
+	width: 300px;
+	height: 14rem;
+}
+.card p {	
+	padding: 1rem 0 0 1rem;
+	font-size: 20px;	
+}
+.card span {
+	padding: 1rem 0 0 1rem;
+	opacity: .4;	
+}
+.lettuce {	
+	background-image: url("/image/lettuce2.jpg");	
+}
+.coriander {
+	background-image: url("/image/plant2.jpg");
+}
+.spinach {
+	background-image: url("/image/spinach4.jpg");
+}
+.recommendation-title {
+	display: flex;
+	align-items: center;
+	gap: .4rem;
+}
+.recommendation-title h4 {
+	font-size: 24px;
+	font-weight: 600;
+}
+.recommendation-title img {
+	width: 20px;
+	height: 20px;
+}
+.recommendation-header {
+	display: flex;
+	justify-content: space-between;
+}
+
+
+
+
+
+
+
+
+
+
