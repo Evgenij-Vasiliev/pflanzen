@@ -132,7 +132,7 @@ img {
 	height: 25px;
 }
 .basil {
-	background-image: url('/image/basil2.jpg');
+	background-image: url('../image/basil2.jpg');
 	margin: 0 auto;
 	width: 90%;
 	height: 14rem;
@@ -262,7 +262,7 @@ i {
 	height: 40%;	
 	border-radius: 1rem;
 	margin: 0 2rem 1rem 2rem;
-	background-image: url('/image/nature-plant5.jpg');
+	background-image: url('../image/nature-plant5.jpg');
 }
 .tags p {
 	color: #fff;
@@ -366,13 +366,13 @@ i {
 	opacity: .4;	
 }
 .lettuce {	
-	background-image: url("/image/lettuce2.jpg");	
+	background-image: url("../image/lettuce2.jpg");	
 }
 .coriander {
-	background-image: url("/image/plant2.jpg");
+	background-image: url("../image/plant2.jpg");
 }
 .spinach {
-	background-image: url("/image/spinach4.jpg");
+	background-image: url("../image/spinach4.jpg");
 }
 .recommendation-title {
 	display: flex;
