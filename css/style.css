@@ -9,6 +9,9 @@ body {
 img {
 	width: 1.5rem;
 	height: 1.5rem;
+	display: block;
+	margin: 0 auto;		
+	max-width: 100%;
 }
 
 .aside-left {		
@@ -51,9 +54,9 @@ img {
 	position: relative;
 }
 
-.nav-link:hover {
+/* .nav-link:hover {
 	background-color: #00cf00;
-}
+} */
 
 .nav-img {
 	width: 2rem;
@@ -67,10 +70,11 @@ img {
 	background-color: #008000;
 }
 
-.header {	
+.header {		
 	padding: 0 3rem;
 	height: 12vh;
 	display: flex;
+	flex-wrap: wrap;
 	justify-content: space-between;
 	align-items: center;
 
@@ -79,6 +83,10 @@ img {
 		width: 2.2rem;
 		height: 2.2rem;
 	}
+	.personal-area {
+		display: flex;
+		flex-wrap: wrap;
+	}
 }
 .main {	
 	height: calc(100% - 12vh);
@@ -86,15 +94,15 @@ img {
 	display: flex;
 }
 
-.main-section {	
+.main-section {		
 	height: 100%;
 	width: 60%;	
 }
 
-.aside-right {	
+.aside-right {		
 	background-color: #fff;
-	border-radius: 10%;
-	height: 100%;
+	border-radius: 2rem;
+	height: 145%;
 	width: 40%;	
 }
 
@@ -103,7 +111,7 @@ img {
 	margin-top: 1rem;
 }
 
-.reminders {
+.reminders {	
 	display: flex;		
 	background-color: #B3CD84;	
 	border-radius: 1rem;
@@ -131,7 +139,7 @@ img {
 	width: 2.5rem;
 	height: 2.5rem;
 }
-.basil {
+.basil {	
 	background-image: url('../image/basil2.jpg');
 	margin: 0 auto;
 	width: 90%;
@@ -145,7 +153,7 @@ img {
 .basil p {
 	font-size: 1.2rem;
 }
-.summary-img {
+.summary-img {	
 	opacity: .3;
 }
 .basil p {
@@ -162,16 +170,11 @@ img {
 	color: #AAC070;
 	cursor: pointer;	
 }
-.position-summary {	
+.position-summary {		
 	position: absolute;
 	bottom: 1rem;
 	right: 1rem;
 }
-/* .position-tags {
-	position: absolute;
-	top: 85%;
-	left: 80%;
-} */
 
 i {
   border: solid #AAC070;
@@ -181,8 +184,8 @@ i {
 }
 
 .right {
-    transform: rotate(-45deg);
-    -webkit-transform: rotate(-45deg);
+	transform: rotate(-45deg);
+	-webkit-transform: rotate(-45deg);
 }
 .schedule {
 	padding: 1rem;
@@ -210,6 +213,7 @@ i {
 	margin-bottom: 1rem;
 }
 .watering-schedule {	
+	border: 2px solid;
 	border-radius: .5rem;
 	width: 9%;
 	height: 4rem;	
@@ -236,6 +240,7 @@ i {
 
 .wrapper_watering-schedule {		
 	display: flex;
+	flex-wrap: wrap;
 	justify-content: center;
 	gap: .8rem;
 }
@@ -243,7 +248,7 @@ i {
 	width: 1rem;
 	height: 1rem;
 }
-.wrapper-schedule {	
+.wrapper-schedule {		
 	width: 90%;
 	margin: 0 auto;
 	border-radius: 1rem;
@@ -256,7 +261,7 @@ i {
 }
 .graph {		
 	margin: 0;
-	width: 18rem;
+	width: 28rem;
 	height: 10rem;		
 }
 
@@ -277,13 +282,12 @@ i {
 .tag {	
 	display: flex;	
 	align-items: center;
-	font-size: .8rem;
-	/* height: 1rem; */
+	font-size: .8rem;	
 }
 .tag-temperature {
 	position: absolute;
 	top: 50%;
-	left: 30%;	
+	left: 25%;	
 }
 .tag-air {
 	position: absolute;
@@ -344,18 +348,20 @@ i {
 }
 .recommendation {		
 	background-color: #fff;
-	height: 50vh;		
+	height: 60%;		
 	border-radius: 1rem;	
 	margin: 0 2rem 1rem 2rem;	
 	padding: 0 1rem;
 }
 .wrapper-cards {		
-	width: 100wv;
+	width: 100%;
 	display: flex;
+	/* flex-wrap: wrap; */
 	justify-content: space-between;
 	gap: 1rem;
 }
-.card {		
+.card {			
+	display: block;
 	border-radius: 1rem;	
 	width: 30rem;
 	height: 10rem;
@@ -394,6 +400,103 @@ i {
 	display: flex;
 	justify-content: space-between;
 }
+
+@media (max-width: 767px) {	
+	.recommendation {
+		height: 110%;
+	}
+	.card {
+		width: 100%;
+	}
+	.wrapper-cards {				
+		flex-wrap: wrap;	
+		width: 100%;	
+	}	
+	.main-section {	
+		height: 100%;
+		width: 55%;	
+	}
+	.aside-right {			
+		border-radius: 1.2rem;
+		height: 200%;
+		width: 40%;	
+	}	
+	.basil {
+		margin: 2rem 0;
+		height: 17rem;
+	}
+	.wrapper-schedule {		
+		height: 60%;
+	}
+	.wrapper_watering-schedule {		
+		margin-bottom: 5rem;
+	}
+	
+	.graph {	
+		padding-right: 2rem;				
+	}
+	.watering {				
+		margin: 1rem 0 3rem 0;	
+	}
+	.summary-img {
+		/* padding: 20px; */
+		margin: 20px;
+	}
+}
+
+@media (max-width: 640px) {
+	.main-section {			
+		height: 100%;
+		width: 100%;	
+	}
+	.aside-right {	
+		display: none;		
+	}
+	
+} 
+@media (max-width: 460px) {	
+	.main-section {
+		margin: 0;
+		padding: 0;
+	}
+	.reminders, .tags, .recommendation {			
+		margin: 0 0 1rem 0;
+	}
+	.recommendation {
+		height: 100%;
+	}
+	.header {
+		padding: 0 .3rem 0 1rem;
+	}
+	.aside-left {
+		width: 10vh;
+	}
+	.nav-link {
+		height: 2rem;
+		width: 2rem;
+		border-radius: 50%;
+		position: relative;
+	}
+	.tag  {
+		display: none;
+	}
+} 
+
+@media (max-width: 380px) {	
+	.header {
+		padding-right: .3rem;
+		font-size: .8rem;
+		.avatar-img,
+		.notification-img {
+			width: 1.4rem;
+			height: 1.4rem;
+		}
+	}
+	.days {
+		display: none;
+	}	
+}
+
 
 
 
