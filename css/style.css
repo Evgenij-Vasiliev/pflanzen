@@ -466,7 +466,7 @@ i {
 		height: 100%;
 	}
 	.header {
-		padding: 0 .3rem 0 1rem;
+		padding: 0 .3rem 0 1.3rem;
 	}
 	.aside-left {
 		width: 10vh;
@@ -495,6 +495,9 @@ i {
 	.days {
 		display: none;
 	}	
+	.aside-left {
+		width: 8vh;
+	}
 }
 
 
